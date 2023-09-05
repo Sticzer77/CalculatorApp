@@ -4,12 +4,43 @@
   box-sizing: border-box;
 }
 section.calculator {
-  width: 40%;
-  height: 70vh;
+  width: 20%;
+  height: 60vh;
   margin: 0 auto;
   border: 1px solid black;
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+}
+.inputtext {
+  background-color: #bbb;
+  height: 20%;
+}
+.calculator input {
+  position: absolute;
+  left: 30%;
+  top: 5%;
+  width: 70%;
+  height: 10%;
+  font-size: 30px;
+  outline: none;
+  background-color: none;
+  color: green;
+  text-align: right;
+  padding: 10px;
+}
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: 80%;
+  background-color: red;
+  padding: 25px 0;
+}
+.buttons .square {
+  flex-basis: 25%;
+}
+.buttons .square:last-child {
+  flex-basis: 50%;
 }
