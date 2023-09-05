@@ -11,30 +11,31 @@
       <section class="calculator">
         <label for="#">
           <div class="inputtext">
-            <input type="text" /></div
+            <input type="text" id="display" /></div
         ></label>
         <div class="buttons">
           <button class="square color">C</button>
           <button class="square color">X</button>
-          <button class="square color">.</button>
-          <button class="square color">/</button>
-          <button class="square">7</button>
-          <button class="square">8</button>
-          <button class="square">9</button>
-          <button class="square color">*</button>
-          <button class="square">4</button>
-          <button class="square">5</button>
-          <button class="square">6</button>
-          <button class="square color">-</button>
-          <button class="square">1</button>
-          <button class="square">2</button>
-          <button class="square">3</button>
-          <button class="square color">+</button>
-          <button class="square last">00</button>
-          <button class="square last">0</button>
+          <button class="square color" onclick="Display('.')">.</button>
+          <button class="square color" onclick="Display('/')">/</button>
+          <button class="square" onclick="Display('7')">7</button>
+          <button class="square" onclick="Display('8')">8</button>
+          <button class="square" onclick="Display('9')">9</button>
+          <button class="square color" onclick="Display('*')">*</button>
+          <button class="square" onclick="Display('4')">4</button>
+          <button class="square" onclick="Display('5')">5</button>
+          <button class="square" onclick="Display('6')">6</button>
+          <button class="square color" onclick="Display('-')">-</button>
+          <button class="square" onclick="Display('1')">1</button>
+          <button class="square" onclick="Display('2')">2</button>
+          <button class="square" onclick="Display('3')">3</button>
+          <button class="square color" onclick="Display('+')">+</button>
+          <button class="square last" onclick="Display('00')">00</button>
+          <button class="square last" onclick="Display('0')">0</button>
           <button class="square last color">=</button>
         </div>
       </section>
     </main>
+    <script src="script.js"></script>
   </body>
 </html>
