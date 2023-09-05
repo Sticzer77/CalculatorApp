@@ -22,6 +22,7 @@ section.calculator {
 .inputtext {
   height: 20%;
   background-color: transparent;
+  border-bottom: 1px solid black;
 }
 .calculator input {
   position: absolute;
@@ -29,7 +30,6 @@ section.calculator {
   top: 7%;
   width: 95%;
   height: 10%;
-  font-size: 30px;
   color: #fff;
   text-align: right;
   padding: 10px 20px;

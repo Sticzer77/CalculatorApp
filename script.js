@@ -2,7 +2,7 @@ function Display(text) {
   document.getElementById("display").value += text;
 }
 
-function Remove(text) {
+function Remove() {
   document.getElementById("display").value = "";
 }
 
@@ -12,5 +12,15 @@ function RemoveLastSign() {
   if (currentValue.length > 0) {
     const newValue = currentValue.slice(0, -1);
     del.value = newValue;
+  }
+}
+
+function Result() {
+  try {
+    const value = document.getElementById("display").value;
+    const calculatedResult = eval(value);
+    document.getElementById("display").value = calculatedResult;
+  } catch (error) {
+    document.getElementById("display").value = "Error ;(";
   }
 }
